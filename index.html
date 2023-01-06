@@ -1,76 +1,472 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Tech Company</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: lightgray;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    nav {
-      background-color: darkgray;
-      overflow: hidden;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    li {
-      flex-grow: 1;
-      text-align: center;
-      border-right: 1px solid white;
-    }
-    li:last-child {
-      border-right: none;
-    }
-    a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 20px;
-    }
-    a:hover {
-      background-color: gray;
-    }
-    main {
-      padding: 20px;
-    }
-    footer {
-      background-color: lightgray;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DSpin Advisory</title>
+  <meta content="DSpin Advisory provides expert consulting services in the data world. Our team of experienced professionals can help your business make data-driven decisions and optimize your data strategy. Contact us to learn more about how we can help you succeed in the data age." name="description">
+  <meta content="Data, Digital, Transformation, Consulting, Services, Advisory, Training, Talent" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Regna - v4.10.0
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-  <header>
-    <h1>Tech Company</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Welcome to Tech Company</h2>
-    <p>We are a leading provider of innovative tech solutions for businesses of all sizes. Our team of experts is dedicated to helping you find the best solutions to meet your needs.</p>
-  </main>
-  <footer>
-    <p>Copyright Tech Company 2022</p>
-  </footer>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">DSpin Advisory</a></li>
+          <li><a class="nav-link scrollto" href="#about">Mission</a></li>
+          <li><a class="nav-link scrollto" href="#services">Valeurs</a></li>
+          <li><a class="nav-link scrollto " href="#call-to-action">Offre</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipe</a></li>
+          <!--
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- * * * * * * * * * * * * * *  -->
+  <!-- * * * * * * * * * * * * * *  -->
+  <!-- * * * * * * * * * * * * * *  -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>DSpin Advisory</h1>
+      <h2>Votre partenaire technologique et talents </h2>
+      <a href="#call-to-action" class="btn-get-started scrollto">Résoudre vos challenges</a>
+      <a href="#dspinner" class="btn-get-started">Grandir avec nous</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">NOS MISSIONS</h2>
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Contribuer</a></h4>
+              <p class="description">au pays à travers la transformation digitale et data en résolvant les challenges les plus complexes au service des secteurs public et privé</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Former</a></h4>
+              <p class="description">les futures générations de talents Data en déployant un apprentissage personnalisé et innovant pour les nouvelles générations </p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Bâtir</a></h4>
+              <p class="description">un écosystème d'acteurs technologique et éducatif qui soit responsable et engagé pour améliorer les pratiques et industrialiser l'excellence</p>
+            </div>
+            <p>
+              Notre motto <span class="motto">T³</span> reflète l'importance d'une synérgie Technologie et Capital humain : <span class="dspin-bold">Think / Teach / Transform</span>
+            </p>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1"></div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <!--
+    <section id="facts">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="534" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Nos Valeurs</h3>
+          <p class="section-description">Nos valeurs nous renforcent et nous différencient</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-briefcase"></i></a></div>
+              <h4 class="title"><a href="">Partage</a></h4>
+              <p class="description">Enseigner est le meilleur moyen d’apprendre<br/>
+                Un savoir partagé est une richesse démultipliée</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-card-checklist"></i></a></div>
+              <h4 class="title"><a href="">Amélioration</a></h4>
+              <p class="description">L’apprentissage ne s’arrête jamais quelque soit le poste, la compétence ou la personne<br/>
+                Le challenge personnel régulier est un bon moyen de s’améliorer
+                </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">Honnêteté</a></h4>
+              <p class="description">Le feedback honnête est la meilleure façon de grandir rapidement<br/>
+                L’expertise est la connaissance de ses limites
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Vos challenges, nos plus grandes réussites ensemble</h3>
+            <p class="cta-text">Nous mettons en place des <span class="dspin-bold">plans stratégiques Data</span>, 
+              nous construisons des <span class="dspin-bold">socles technologiques</span> 
+              et mettons en place des <span class="dspin-bold">algorithmes d'intelligence artificielle</span>, 
+              nous opérons la transformation de votre métier 
+              par la <span class="dspin-bold">Transformation Digital Data</span> 
+              et nous faisons de la <span class="dspin-bold">formation et 
+                de l'animation de séminaire de vulgarisation</span></p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Let's do it</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- ======= Portfolio Section ======= -->
+    <!--
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- * * * * * * * * * * * * * *  -->
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">E-Spinner, T-Spinners, C-Spinners, I-Spinners et D-Spinners</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
+              <h4>Issam EL ALAOUI</h4>
+              <span>Founder & T-Spinner</span>
+              <div class="social">
+                <a href="https://twitter.com/AshtonIzmev"><i class="bi bi-twitter"></i></a>
+                <a href="https://github.com/AshtonIzmev/"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/issam-el-alaoui-389a8231/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          -->
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description">Vous vouler travailler avec nous ? Nous sommes à votre écoute.
+            <br/> Vous voulez devenir un <span class="dspin-bold">X-Spinner</span> ? Nous recrutons les talents surmotivés !</p>
+        </div>
+      </div>
+
+      <!--
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8422.239507953309!2d-6.848217672137614!3d33.99405893249142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1672904280994!5m2!1sfr!2sma" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      -->
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>Agdal, Rabat</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>contact@dspin.ma</p>
+              </div>
+
+              <!--
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+              -->
+            </div>
+
+            <div class="social-links">
+              <!--
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              -->
+              <a href="https://www.linkedin.com/company/91606610/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nom/Prénom" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Parlons-nous business ou recrutement ?" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Chargement</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Votre message a été envoyé, merci.</div>
+                </div>
+                <div class="text-center"><button type="submit">Envoyer</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. 
+        Photos de 
+      <a href="https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Campaign Creators</a>,   
+      <a href="https://unsplash.com/@jack_anstey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack Anstey</a>,
+      <a href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a> sur <a href="https://unsplash.com/fr/photos/4UGmm3WRUoQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
