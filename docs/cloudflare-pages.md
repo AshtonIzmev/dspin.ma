@@ -6,12 +6,12 @@ DSpin is a static site and does not require Node.js or a framework build. Cloudf
 
 Connect `AshtonIzmev/dspin.ma` in **Workers & Pages -> Create -> Import a repository**.
 
-| Setting | Value |
-|---|---|
-| Production branch | `main` |
-| Root directory | `/` |
-| Build command | `./scripts/build-pages.sh` |
-| Deploy command | `npx wrangler deploy` |
+| Setting           | Value                      |
+| ----------------- | -------------------------- |
+| Production branch | `main`                     |
+| Root directory    | `/`                        |
+| Build command     | `./scripts/build-pages.sh` |
+| Deploy command    | `npx wrangler deploy`      |
 
 The committed `wrangler.jsonc` restricts static assets to `dist/`. Do not change its asset directory to `.` because that would expose repository internals.
 
