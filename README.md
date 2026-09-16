@@ -14,5 +14,5 @@ génère un dossier `dist/` minimal contenant uniquement les fichiers publics. L
 projet et la procédure de migration du domaine sont documentés dans
 [`docs/cloudflare-pages.md`](docs/cloudflare-pages.md).
 
-Le déploiement VPS historique reste disponible localement via `deploy.sh` jusqu'à validation de
-la migration Cloudflare.
+Les déploiements de production sont automatiques à chaque push sur `main`. L'ancien hébergement
+VPS n'est plus utilisé par `dspin.ma`.
