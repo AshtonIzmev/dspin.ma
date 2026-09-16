@@ -48,6 +48,7 @@ body{
 img{max-width:100%;display:block}
 a{color:inherit}
 button{font:inherit;background:none;border:none;cursor:pointer;color:inherit}
+.svg-symbols{position:absolute}
 ::selection{background:var(--spin);color:var(--deep)}
 :focus-visible{outline:2px solid var(--spin-lit);outline-offset:3px;border-radius:2px}
 

@@ -4,7 +4,5 @@
 
 ---
 
-**Proposition de refonte en cours :** [`/redesign/`](redesign/) — une maquette fonctionnelle
-qui remplace le template Bootstrap par du code écrit à la main, inspirée de
-[34stud.io](https://34stud.io). Elle n'affecte pas le site actuel.
-Voir [`redesign/README.md`](redesign/README.md).
+Le site principal utilise la refonte sur mesure, sans framework ni étape de compilation.
+L'ancienne page d'accueil reste disponible dans [`index-legacy.html`](index-legacy.html).
