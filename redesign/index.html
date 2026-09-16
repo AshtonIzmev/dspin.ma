@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>DSpin Advisory — Conseil Data &amp; IA · Rabat</title>
+<meta name="description" content="DSpin Advisory est un cabinet de conseil Data &amp; Intelligence Artificielle basé à Rabat. Nous transformons vos données en décisions et formons vos équipes à l'autonomie. Think · Teach · Transform.">
+<meta name="keywords" content="Data, IA, Intelligence Artificielle, Machine Learning, LLM, Big Data, Transformation digitale, Conseil, Formation, Maroc, Rabat">
+<meta name="theme-color" content="#050f0e">
+<link rel="canonical" href="https://dspin.ma/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dspin.ma/">
+<meta property="og:title" content="DSpin Advisory — Conseil Data &amp; IA">
+<meta property="og:description" content="Votre partenaire technologie &amp; talents. Think · Teach · Transform.">
+<meta property="og:locale" content="fr_MA">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="../assets/img/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="../assets/img/favicon/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/Oswald-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Manrope-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#hero">Aller au contenu</a>
+
+<!-- ══════════ symboles ══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="spinmark" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <path d="M12 2.6a9.4 9.4 0 0 1 8.14 4.7"/>
+      <path d="M20.14 16.7A9.4 9.4 0 0 1 3.86 16.7"/>
+      <path d="M3.86 7.3A9.4 9.4 0 0 1 8.5 3.03"/>
+      <path d="M12 6.8a5.2 5.2 0 0 1 4.5 7.8"/>
+      <path d="M15.3 16.95A5.2 5.2 0 0 1 7.5 9.4"/>
+    </g>
+    <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.26.8-.57v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.57A12 12 0 0 0 12 .5z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 2H22l-7.1 8.1L23.2 22h-6.5l-5.1-6.6L5.8 22H2.6l7.6-8.7L1.8 2h6.7l4.6 6.1zm-1.1 18h1.7L7.3 3.8H5.4z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7H19.5z"/></symbol>
+</svg>
+
+<!-- ══════════ couches de fond ══════════ -->
+<div id="bed" aria-hidden="true"></div>
+<canvas id="spin" aria-hidden="true"></canvas>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header id="nav">
+  <a class="brand" href="#hero" aria-label="DSpin Advisory — accueil">
+    <svg class="brand-mark" aria-hidden="true"><use href="#spinmark"/></svg>
+    <span class="brand-name">DSpin<b>.</b></span>
+  </a>
+  <nav class="nav-links" aria-label="Navigation principale">
+    <a href="#motto">T³</a>
+    <a href="#missions">Missions</a>
+    <a href="#offre">Offre</a>
+    <a href="#valeurs">Valeurs</a>
+    <a href="#equipe">Équipe</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Parlons-en</a>
+  <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div id="mobileMenu" hidden>
+  <svg class="mm-mark" aria-hidden="true"><use href="#spinmark"/></svg>
+  <nav class="mm-links" aria-label="Navigation mobile">
+    <a href="#motto">T³</a>
+    <a href="#missions">Missions</a>
+    <a href="#offre">Offre</a>
+    <a href="#valeurs">Valeurs</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="mm-foot">
+    <span>Agdal, Rabat</span>
+    <a href="https://www.linkedin.com/company/dspinadvisory" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div>
+
+<div id="hud" aria-hidden="true"><span class="hud-dot"></span><span id="hudRead">think</span></div>
+
+<main>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="hero" data-bed="#0a1a17">
+    <p class="eyebrow" data-reveal>Conseil Data &amp; IA · Agdal, Rabat</p>
+    <h1 class="hero-title">
+      <span class="line" data-reveal>Votre partenaire</span>
+      <span class="line" data-reveal>technologie &amp; talents<span class="dot">.</span></span>
+    </h1>
+    <p class="hero-sub" data-reveal>Nous résolvons les challenges Data et IA les plus complexes — et nous formons vos équipes à s'en passer. La technologie ne vaut que par les femmes et les hommes qui la portent.</p>
+    <div class="hero-ctas" data-reveal>
+      <a class="btn btn-spin" href="#contact">Résoudre vos challenges</a>
+      <a class="btn btn-ghost" href="#equipe">Grandir avec nous</a>
+    </div>
+    <div class="hero-dive" data-reveal aria-hidden="true"><span>Défiler</span><span class="dive-arrow">↓</span></div>
+  </section>
+
+  <!-- ══════════ MARQUEE ══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Machine Learning</span><i>✦</i>
+      <span>Large Language Models</span><i>✦</i>
+      <span>Big Data</span><i>✦</i>
+      <span>Stratégie de la donnée</span><i>✦</i>
+      <span>MLOps</span><i>✦</i>
+      <span>Formation &amp; montée en compétences</span><i>✦</i>
+      <span>Transformation digitale</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ══════════ T³ — LE MOTTO ══════════ -->
+  <section id="motto" data-bed="#0a1c19">
+    <div class="motto-head">
+      <p class="motto-glyph" data-reveal>T<sup>3</sup></p>
+      <p class="motto-intro" data-reveal>Notre motto reflète l'importance d'une synergie entre la technologie et le capital humain. Trois temps, indissociables — parce qu'un modèle qu'on ne sait pas expliquer n'est pas un actif, c'est une dette.</p>
+    </div>
+    <div class="t3">
+      <article data-reveal>
+        <p class="t3-n">01</p>
+        <h3>Think</h3>
+        <p>Comprendre le métier avant la donnée. Nous cadrons le problème, éprouvons la faisabilité et écartons ce qui ne créera pas de valeur — y compris quand la réponse est « pas d'IA ici ».</p>
+      </article>
+      <article data-reveal>
+        <p class="t3-n">02</p>
+        <h3>Teach</h3>
+        <p>Transmettre pendant, pas après. Vos équipes construisent avec nous, apprennent sur votre propre contexte et repartent avec la main sur ce qui a été bâti.</p>
+      </article>
+      <article data-reveal>
+        <p class="t3-n">03</p>
+        <h3>Transform</h3>
+        <p>Livrer en production et tenir dans la durée. Un modèle qui tourne, une équipe qui le fait vivre, une organisation qui décide autrement.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ MISSIONS ══════════ -->
+  <section id="missions" data-bed="#0b1f1b">
+    <div class="sec-head">
+      <p class="kicker" data-reveal>Nos missions</p>
+      <h2 data-reveal>Ce à quoi<br>nous servons.</h2>
+      <p class="sec-sub" data-reveal>Trois engagements qui dépassent le périmètre d'une mission de conseil — et qui expliquent pourquoi nous refusons certains projets.</p>
+    </div>
+    <div class="mission-grid">
+      <article class="mi" data-reveal>
+        <p class="mi-n">Mission 01</p>
+        <h3>Contribuer</h3>
+        <p>Au développement du pays à travers la transformation digitale et data, en résolvant les challenges les plus complexes.</p>
+      </article>
+      <article class="mi" data-reveal>
+        <p class="mi-n">Mission 02</p>
+        <h3>Former</h3>
+        <p>Les futurs talents, en déployant un apprentissage personnalisé et innovant dédié aux nouvelles générations.</p>
+      </article>
+      <article class="mi" data-reveal>
+        <p class="mi-n">Mission 03</p>
+        <h3>Bâtir</h3>
+        <p>Un écosystème d'acteurs technologiques et éducatifs responsable et engagé, pour industrialiser l'excellence.</p>
+      </article>
+    </div>
+  </section>
+
+  <!--
+    ══════════ CHIFFRES CLÉS ══════════
+    Bloc prêt à l'emploi (styles `#keynums` / `.keynum` déjà dans styles.css,
+    le compteur JS s'anime via data-count). Volontairement désactivé : il ne
+    doit être publié qu'avec de VRAIS chiffres — remplacer les trois valeurs
+    ci-dessous, puis retirer ces balises de commentaire.
+
+  <section id="keynums" data-bed="#0b211c">
+    <div class="keynum" data-reveal><strong data-count="0">0</strong><span>à remplir</span></div>
+    <div class="keynum" data-reveal><strong data-count="0">0</strong><span>à remplir</span></div>
+    <div class="keynum" data-reveal><strong data-count="0">0</strong><span>à remplir</span></div>
+  </section>
+  -->
+
+  <!-- ══════════ OFFRE ══════════ -->
+  <section id="offre" data-bed="#0c2320">
+    <div class="sec-head">
+      <p class="kicker" data-reveal>L'offre</p>
+      <h2 data-reveal>Vos challenges,<br>nos plus grandes<br>réussites.</h2>
+    </div>
+    <p class="offre-body" data-reveal>
+      Nous mettons au service <strong>l'intelligence artificielle</strong> — à travers les
+      <strong>algorithmes de Machine Learning</strong> et les <strong>Large Language Models</strong> —
+      pour opérer les transformations Big Data et IA de votre métier. Et nous accompagnons vos équipes
+      pour les <strong>former et les faire gagner en autonomie</strong>.
+    </p>
+    <div class="stack" data-reveal>
+      <span>Cadrage &amp; faisabilité</span>
+      <span>Machine Learning</span>
+      <span>LLM &amp; IA générative</span>
+      <span>Architecture Big Data</span>
+      <span>MLOps &amp; mise en production</span>
+      <span>Gouvernance de la donnée</span>
+      <span>Formation sur mesure</span>
+      <span>Recrutement de talents data</span>
+    </div>
+    <div class="cta-band" data-reveal>
+      <p>Un challenge data ou IA sur la table ?<br><em>Commençons par en parler franchement.</em></p>
+      <a class="btn btn-spin" target="_blank" rel="noopener" href="https://forms.gle/1SXfpW8bUoeJxT1c9">Let's do it</a>
+    </div>
+  </section>
+
+  <!-- ══════════ VALEURS ══════════ -->
+  <section id="valeurs" data-bed="#0d2522">
+    <div class="sec-head">
+      <p class="kicker" data-reveal>Nos valeurs</p>
+      <h2 data-reveal>Humaines<br>avant tout.</h2>
+      <p class="sec-sub" data-reveal>Nos valeurs humaines nous renforcent et nous différencient. Elles ne sont pas décoratives : elles décident de qui nous recrutons et de ce que nous refusons.</p>
+    </div>
+    <div class="val-stack">
+      <figure class="vcard" data-reveal>
+        <span class="vc-bracket tl"></span><span class="vc-bracket br"></span>
+        <figcaption class="vc-name"><svg class="vc-mark" aria-hidden="true"><use href="#spinmark"/></svg>Partage</figcaption>
+        <blockquote class="vc-text" data-split>Un savoir partagé est une richesse démultipliée</blockquote>
+      </figure>
+      <figure class="vcard" data-reveal>
+        <span class="vc-bracket tl"></span><span class="vc-bracket br"></span>
+        <figcaption class="vc-name"><svg class="vc-mark" aria-hidden="true"><use href="#spinmark"/></svg>Amélioration</figcaption>
+        <blockquote class="vc-text" data-split>L'apprentissage personnel ne s'arrête jamais</blockquote>
+      </figure>
+      <figure class="vcard" data-reveal>
+        <span class="vc-bracket tl"></span><span class="vc-bracket br"></span>
+        <figcaption class="vc-name"><svg class="vc-mark" aria-hidden="true"><use href="#spinmark"/></svg>Honnêteté</figcaption>
+        <blockquote class="vc-text" data-split>L'expertise est la connaissance de ses limites</blockquote>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ══════════ ÉQUIPE ══════════ -->
+  <section id="equipe" data-bed="#0e2624">
+    <div class="sec-head">
+      <p class="kicker" data-reveal>L'équipe</p>
+      <h2 data-reveal>The Spinners.</h2>
+      <p class="sec-sub" data-reveal>Une équipe réduite, très senior, qui code encore. Nous recrutons les talents surmotivés — le niveau d'exigence n'est pas négociable.</p>
+    </div>
+    <div class="team-grid">
+      <article class="tm" data-reveal>
+        <div class="tm-photo">
+          <img src="../assets/img/team/iea.jpg" alt="Issam El Alaoui" loading="lazy" width="400" height="400">
+          <svg class="tm-mark" aria-hidden="true"><use href="#spinmark"/></svg>
+        </div>
+        <h3>Issam El Alaoui</h3>
+        <p class="tm-role">Founder &amp; Tech-Spinner</p>
+        <p class="tm-bio">Data &amp; IA en banque et en conseil. Construit, forme, et livre en production.</p>
+        <div class="tm-social">
+          <a href="https://www.linkedin.com/in/issam-el-alaoui-389a8231/" target="_blank" rel="noopener" aria-label="LinkedIn d'Issam El Alaoui"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://github.com/AshtonIzmev/" target="_blank" rel="noopener" aria-label="GitHub d'Issam El Alaoui"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a href="https://twitter.com/AshtonIzmev" target="_blank" rel="noopener" aria-label="X d'Issam El Alaoui"><svg aria-hidden="true"><use href="#i-x"/></svg></a>
+        </div>
+      </article>
+      <article class="join" data-reveal>
+        <h3>Devenir<br>Spinner</h3>
+        <p>Vous voulez rejoindre l'équipe ? Nous recrutons les talents surmotivés, curieux et honnêtes sur ce qu'ils savent faire.</p>
+        <a target="_blank" rel="noopener" href="https://forms.gle/TVThdMCNzmJinjdQ7">Let's work together<span class="ext">↗</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact" data-bed="#0e2622">
+    <div class="sec-head">
+      <p class="kicker" data-reveal>Contact</p>
+      <h2 data-reveal>Deux façons<br>de nous croiser.</h2>
+    </div>
+    <div class="contact-grid">
+      <article class="ct" data-reveal>
+        <p class="ct-n">Vous êtes une organisation</p>
+        <h3>Travailler<br>avec nous</h3>
+        <p>Vous voulez travailler avec nous ? Nous sommes à votre écoute — même si votre besoin n'est pas encore net.</p>
+        <a class="btn btn-spin" target="_blank" rel="noopener" href="https://forms.gle/1SXfpW8bUoeJxT1c9">Let's do it</a>
+      </article>
+      <article class="ct" data-reveal>
+        <p class="ct-n">Vous êtes un talent</p>
+        <h3>Rejoindre<br>les Spinners</h3>
+        <p>Vous voulez devenir un <span class="hl">Spinner</span> ? Écrivez-nous, même sans offre ouverte. Nous lisons tout.</p>
+        <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://forms.gle/TVThdMCNzmJinjdQ7">Let's work together</a>
+      </article>
+    </div>
+    <div class="coords" data-reveal>
+      <span><svg aria-hidden="true"><use href="#i-pin"/></svg>Agdal, Rabat — Maroc</span>
+      <span><svg aria-hidden="true"><use href="#i-mail"/></svg><span id="mail" data-user="contact" data-host="dspin.ma">contact ⟨at⟩ dspin.ma</span></span>
+      <span><svg aria-hidden="true"><use href="#i-linkedin"/></svg><a href="https://www.linkedin.com/company/dspinadvisory" target="_blank" rel="noopener">/dspinadvisory</a></span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="foot-track">
+      <span>Think&nbsp;·&nbsp;Teach&nbsp;·&nbsp;Transform&nbsp;&nbsp;✦&nbsp;&nbsp;La donnée en avantage décisif&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>Think&nbsp;·&nbsp;Teach&nbsp;·&nbsp;Transform&nbsp;&nbsp;✦&nbsp;&nbsp;La donnée en avantage décisif&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+    </div>
+  </div>
+  <div class="foot-row">
+    <span>© <span id="year">2026</span> · DSpin Advisory</span>
+    <span>Agdal, Rabat — Maroc</span>
+    <span><a href="https://www.linkedin.com/company/dspinadvisory" target="_blank" rel="noopener">LinkedIn</a></span>
+    <span>Think · Teach · Transform</span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+
+<!-- Fathom — analytics respectueux de la vie privée, sans cookie -->
+<script>
+(function(f,a,t,h,o,m){
+  a[h]=a[h]||function(){(a[h].q=a[h].q||[]).push(arguments)};
+  o=f.createElement('script'),m=f.getElementsByTagName('script')[0];
+  o.async=1;o.src=t;o.id='fathom-script';
+  m.parentNode.insertBefore(o,m)
+})(document,window,'//analytics.issam.ma/tracker.js','fathom');
+fathom('set','siteId','TLRKI');
+fathom('trackPageview');
+</script>
+
+</body>
+</html>
