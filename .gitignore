@@ -1,1 +1,4 @@
 deploy.sh
+dist/
+.wrangler/
+.wrangler
